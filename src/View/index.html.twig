@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    <div class="container-fluid">
+        <ul class="row">
+                {% for currentProduct in products %}
+                    <li class="col-4">{{ currentProduct }}</li>
+                {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
